@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style/style_flex.css">
+    
+</head>
+<body>
+    <div class="registration-form">
+        <form action="register.cz" method="post">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Подписаться на рассылку</label>
+            </div>
+            <div class="form-group">
+                <label>Пол:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Женский</label>
+            </div>
+            <div class="form-group">
+                <label for="country">Страна:</label>
+                <select id="country" name="country">
+                    <option value="usa">США</option>
+                    <option value="canada">Канада</option>
+                    <option value="uk">Великобритания</option>
+                </select>
+            </div>
+            <input type="hidden" name="session_id" value="123456789">
+            <button type="submit" class="submit-button">Зарегистрироваться</button>
+        </form>
+    </div>
+</body>
+</html>
